@@ -1,0 +1,397 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+#hi
+
+- intent: thankyou
+  examples: |
+    - thanks
+    - thankyou
+    - ok great
+    - nice
+    - good job
+    - great
+    - good
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - yeah
+    - yes proceed
+
+- regex: email
+  examples: |
+    - /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+- regex: contact
+  examples: |
+    - /^([+]\d{2}[ ])?\d{10}$/
+
+- intent: inform
+  examples: |
+    - [abc-d@mail.com]{"entity":"email"}
+    - [abc.def@mail.com]{"entity":"email"}
+    - [abc@mail.com]{"entity":"email"}
+    - [abc_def@mail.com]{"entity":"email"}
+    - [+91 0123456789]{"entity":"contact"}
+    - [7503907302]{"entity":"contact"}
+    - Biology
+    - Chemistry and Biochemistry
+    - Computer Science
+    - Earth and Space Sciences
+    - English and Modern Languages
+    - History
+    - Mathematics
+    - Physics
+    - Political Science
+    - Psychology
+    - Sociology, Social Work and Criminal Justice
+    - University Studies
+    - Communication
+    - Others
+
+- lookup: names
+  examples: |
+    - james
+    - john
+    - robert
+    - michael
+    - william
+    - mary
+    - david
+    - richard
+    - joseph
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - none
+
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: test
+  examples: |
+    - test
+    - test message
+    - testing
+
+- intent: scholarship
+  examples: |
+    - How to get a scholarship to study abroad?
+    - How to get a scholarship?
+    - Funding my degree?
+    - How to get a full scholarship?
+    - How to get money for my studies?
+
+- intent: industries
+  examples: |
+    - What industries are in demand right now?
+    - What jobs are good in the future?
+    - What is the future scope?
+    - Which sectors have a good scope?
+    - What is the scope?
+    - What are the future industries expected?
+    - Which has more scope in the future?
+    - To follow my aim or choose profession with scope
+    - What industry should I choose after this pandemic?
+    - What scope has high demand?
+    - What scope has high demand after the post-covid?
+
+- intent: adapting
+  examples: |
+    - How to adapt yourself in a different environment?
+    - How to merge with other fellow mates?
+    - How to mingle with other students?
+    - How to join other groups?
+    - How to adjust in a different environment?
+    - How to adapt to a new environment as a student?
+
+- intent: masters
+  examples: |
+    - Should I start working or move with my masters?
+    - Should i study PG?
+    - Should i study post graduate?
+    - Should i study master?
+    - Should i get a master’s degree?
+    - Is getting a master’s degree worth it?
+    - Should i study bachelor’s degree or a master;s degree?
+    - Should i do UG or PG?
+    - Shall i continue my studies with a master degree?
+    - Should i do a job or masters?
+
+- intent: place_of_study
+  examples: |
+    - Which is the best place to study ,in india or abroad? 
+    - Should i go abroad or india?
+    - What should i prefer india or abroad?
+    - Where should i study india or abroad?
+    - Is india good or abroad?
+    - Should i choose to study abroad or india?
+    - where should i study?
+
+- intent: languages
+  examples: |
+    - Which is the best foreign language to learn for job?
+    - Will learning new languages help us?
+    - Is studying a new language better?
+    - What language should i learn?
+    - Benefits of learning a new language?
+    - Will learning a new language help your career?
+    - Is studying a foreign language good or bad?
+    - Why should students take foreign languages?
+
+- intent: loans
+  examples: |
+    - Is it possible to apply for loan?
+    - can i get loan for studying abroad?
+    - Loan for studies?
+    - How should i get loan for education?
+    - How do you get a loan?
+    - What is the procedure for an education loan?
+    - How can i take a education loan?
+    - What are the ways to get loan?
+    - Steps to get a student loan?
+    - Loan?
+
+- intent: visa
+  examples: |
+    - Procedure to get a visa?
+    - How to get visa?
+    - Visa?
+    - Visa for students?
+    - How to apply for visa?
+
+- intent: safety
+  examples: |
+    - What is the measure to check for safety in a country?
+    - What are the precautions should i take before going to other countries?
+    - Precautions for safety?
+    - Safety measures?
+    - What can i do to be safe?
+    - How to be safe in other countries?
+    - Things to be noted for safety?
+
+- intent: learning_college
+  examples: |
+    - Should i go for college?
+    - Should i go for university?
+    - Studying in college important?
+    - Studying in university important?
+    - Why should i study college?
+    - Why should i study university?
+    - Benefits of studying college or university?
+
+- intent: part_time
+  examples: |
+    - What is the parttime job hours?
+    - How to get part time job?
+    - Can we do part time job?
+    - Part time? 
+    - Part time job for students?
+
+- intent: resume
+  examples: |
+    - What should i add in my resume?
+    - How can i make my resume attractive?
+    - How to make my resume beautiful?
+    - How to improve my resume?
+    - what should I put on my resume to make it attractive?
+    - Resume?
+    - how can I make myself stand out
+    - What things should be there in my resume?
+
+- intent: interview
+  examples: |
+    - How should I prepare for my interview?
+    - What questions should I prepare?
+    - what type of interview questions should I expect and how to answer them
+    - Interview questions?
+
+- intent: high_pay_jobs
+  examples: |
+    - List out the highest paying jobs
+    - What are the top 10 highest paying jobs?
+    - What are all the highest paying jobs in 2021?
+    - Suggest me some Jobs with highest pay
+    - What are all the richest job in the world?
+    - List out some best paying occupations
+
+- intent: my_purpose
+  examples: |
+    - Why do I need a career counselor?
+    - how can you help me?
+    - what is your purpose?
+    - Tell me about yourself
+
+- intent: career
+  examples: |
+    - How to decide my career?
+    - How to find a path to my career?
+    - How to choose a career?
+    - Help me to choose a career?
+    - What should i ask myself before i choose my career?
+    - Questions to be asked for my path?
+
+- intent: top_colleges
+  examples: |
+    - What are the top colleges?
+    - Top universities?
+    - What are the top universities?
+    - Famous universities?
+    - Famous colleges?
+    - Suggested universities and workplaces?
+
+
+- intent: germany
+  examples: |
+    - germany uni?
+
+- intent: canada
+  examples: |
+    - canada uni?
+
+- intent: india
+  examples: |
+    - india uni?
+
+- intent: uk
+  examples: |
+    - uk uni?
+
+- intent: usa
+  examples: |
+    - usa uni?
+   
+- intent: subject_choose
+  examples: |
+    - How should I choose my course?
+    - How should I decide on my degree?
+    - Tips for choosing a degree?
+    - What aspect should I view to choose my degree?
+    - Help me to choose my subject?
+
+- intent: cost_of_living
+  examples: |
+    - What is the cost of living?
+    - What is the cost of living in this country?
+    - Cost of living?
+    - Costof living?
+
+- intent: col_canada
+  examples: |
+    - cost of living in Canada ?
+
+- intent: col_india
+  examples: |
+    - cost of living in India ?
+
+- intent: col_germany
+  examples: |
+    - cost of living in Germany ?
+
+- intent: col_usa
+  examples: |
+    - cost of living in USA ?
+
+- intent: col_uk
+  examples: |
+    - cost of living in UK ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
