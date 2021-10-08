@@ -17,8 +17,6 @@ nlu:
     - goodevening
     - good afternoon
 
-#hi
-
 - intent: thankyou
   examples: |
     - thanks
