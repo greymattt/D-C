@@ -1,0 +1,195 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: test message
+  steps:
+  - intent: test
+  - action: utter_test
+
+- story: scholarship
+  steps:
+  - intent: scholarship
+  - action: utter_scholarship
+
+- story: industries
+  steps:
+  - intent: industries
+  - action: utter_industries
+
+- story: adapting
+  steps:
+  - intent: adapting
+  - action: utter_adapting
+
+- story: masters
+  steps:
+  - intent: masters
+  - action: utter_masters
+
+- story: place_of_study
+  steps:
+  - intent: place_of_study
+  - action: utter_place_of_study
+
+- story: languages
+  steps:
+  - intent: languages
+  - action: utter_languages
+
+- story: loans
+  steps:
+  - intent: loans
+  - action: utter_loans
+
+- story: visa
+  steps:
+  - intent: visa
+  - action: utter_visa
+
+- story: safety
+  steps:
+  - intent: safety
+  - action: utter_safety
+
+- story: learning_college
+  steps:
+  - intent: learning_college
+  - action: utter_learning_college
+
+- story: part_time
+  steps:
+  - intent: part_time
+  - action: utter_part_time
+
+- story: resume
+  steps:
+  - intent: resume
+  - action: utter_resume
+
+- story: interview
+  steps:
+  - intent: interview
+  - action: utter_interview
+
+- story: high_pay_jobs
+  steps:
+  - intent: high_pay_jobs
+  - action: utter_high_pay_jobs
+
+- story: my_purpose
+  steps:
+  - intent: my_purpose
+  - action: utter_my_purpose
+
+- story: career
+  steps:
+  - intent: career
+  - action: utter_career
+
+- story: top_colleges
+  steps:
+  - intent: top_colleges
+  - action: utter_top_colleges
+
+- story: canada
+  steps:
+  - intent: canada
+  - action: utter_canada
+
+- story: germany
+  steps:
+  - intent: germany
+  - action: utter_germany
+
+- story: india
+  steps:
+  - intent: india
+  - action: utter_india
+
+- story: usa
+  steps:
+  - intent: usa
+  - action: utter_usa
+
+- story: uk
+  steps:
+  - intent: uk
+  - action: utter_uk
+
+- story: cost_of_living
+  steps:
+  - intent: cost_of_living
+  - action: utter_cost_of_living
+
+- story: col_canada
+  steps:
+  - intent: col_canada
+  - action: utter_col_canada
+
+- story: col_india
+  steps:
+  - intent: col_india
+  - action: utter_col_india
+
+- story: col_germany
+  steps:
+  - intent: col_germany
+  - action: utter_col_germany
+
+- story: col_usa
+  steps:
+  - intent: col_usa
+  - action: utter_col_usa
+
+- story: col_uk
+  steps:
+  - intent: col_uk
+  - action: utter_col_uk
+
+- story: contact details happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: detail_form
+  - active_loop: detail_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: vincent
+  - slot_was_set:
+    - requested_slot: institute
+  - slot_was_set:
+    - institute: Whale Gulch Middle School
+  - active_loop: null
+  - action: utter_detail
+  - intent: thankyou
+  - action: utter_goodbye

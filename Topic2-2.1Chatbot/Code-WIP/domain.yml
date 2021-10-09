@@ -1,0 +1,427 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - inform
+  - thankyou
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - test
+  - lower_stress
+  - scholarship
+  - industries
+  - adapting
+  - masters
+  - place_of_study
+  - languages
+  - loans
+  - visa
+  - safety
+  - learning_college
+  - part_time
+  - resume
+  - interview
+  - high_pay_jobs
+  - my_purpose
+  - career
+  - top_colleges
+  - germany
+  - canada
+  - india
+  - uk 
+  - usa 
+  - subject_choose
+  - cost_of_living
+  - col_canada
+  - col_germany
+  - col_india
+  - col_uk
+  - col_usa
+
+entities:
+  - email
+  - contact
+
+responses:
+  utter_greet:
+  - text: "Hey! This is career bot \nDo you like to submit your details for future contact? press[Y/N]"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Okay, carry on!!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_test:
+  - text: "Test Message"
+
+  utter_scholarship:
+  - text: "Scholarships are usually of the following types:\n
+            \t1. Scholarships offered by the institution/university.\n
+          \t2. Scholarships offered by the government.\n
+          \t3. Scholarships offered by private trusts, charitable organisations and companies."
+
+  utter_industries:
+  - text: "1. Software Engineer\n
+        2. Salesperson\n
+        3. Store Associate\n
+        4. Registered Nurse\n
+        5. Animal Groomer\n
+        6. Javascript Developer\n
+        7. Project Manager\n
+        8. Retail Salesperson\n
+        9. Driver\n
+        10. DevOps Enginee"
+
+  utter_adapting:
+  - text: "Build your transferable skills and focus on adaptability while keeping an 
+          eye on trending domains.\n
+        Transferable skills are:\n
+          \t1. Communication\n
+          \t2. Big Picture Thinking\n
+          \t3. Attention to Detail\n
+          \t4. Analytical Skills\n
+          \t5. Emotional Intelligence\n
+          \t6. Situational Awareness\n
+          \t7. Research\n
+          \t8. logical Thinking\n
+          These are a few examples"
+
+  utter_masters:
+  - text: "Studying for a Masters degree is an exciting prospect and there are many valid 
+          reasons to consider taking a postgraduate course. The most popular reasons for 
+          undertaking a Masters include:\n
+
+          \t1. progressing a current career path\n
+          \t2. Improving employment prospects\n
+          \t3. Developing a personal interest\n
+          \t4. Progressing to a higher level qualification (such as a PhD)\n
+          \t5. Intering a particular profession\n
+          \t6. Meeting the requirements of a current job."
+  utter_place_of_study:
+  - text: "Only if you have a great command and knowledge of what you are going 
+          to study and your course has a good scope there. I always say:\n
+          Studying abroad doesn't mean well settled life.\n
+          It needs hard work patience, skills just like in India.\n
+          The only difference is there are more job opportunities and safe environment than India."
+
+  utter_languages:
+  - text: "When we talk about opportunities , especially for higher studies two languages stand out – German and Japanese
+          Germany offers the Erasmus Mundus Scholarship and Japan offers the MEXT scholarships\n
+          In many cases you can get 100% scholarship to study in these countries in cutting edge technologies.\n
+          Also if you know these languages it becomes much easier, though at a graduate level you can still manage with English"
+
+  utter_loans:
+  - text: "The vital education loan eligibility criteria that the candidates need to fulfil to get approval for the loan are listed out here:\n
+          \t1. The candidate applying for the loan must be a resident of India.\n
+          \t2. He/she must have confirmed admission in recognised educational institutes in India or abroad.\n
+          \t3. The age of the candidate must fall within the bracket of 18 to 35 years during loan application.\n
+          \t4. He/she must be undergoing a graduate/postgraduate degree or a PG diploma.\n
+          \t5. The applicant should have a secured admission in a college or university affiliated by UGC/AICTE/Govt. etc.\n
+          \t6. Students pursuing full-time courses need to have a co-applicant who can be either parent/guardian or spouse/parent-in-law (in case of married candidate"
+
+  utter_visa:
+  - text: "The visa application process differs from country to country. Each country has its own set of rules when it comes to accepting visa applications.
+          Normally, an applicant needs to go through the following steps to obtain a visa:\n
+          \tStep 1: Select the type of visa you are applying for.\n
+          \tStep 2: Next, check your eligibility.\n
+          \tStep 3: Fill the online application form entering all required information.\n
+          \tStep 4: And finally appear for the visa interview along with all required documents at a select embassy."
+
+  utter_safety:
+  - text: "There are several basic things you are supposed to know that will transform your student journey into a great experience\n
+          \t1. You should be well informed (Research)\n
+          \t2. Bag-packing\n
+          \t3. Prepare for living in a foreign country\n
+          \t4. Student accommodation\n
+          \t5. On arrival\n
+          \t6. Bank account\n
+          \t7. Earning while learning\n
+          \t8. International calling\n"
+
+  utter_learning_college:
+  - text: "It’s a good question to be asking as you consider your future—and everything.\n
+          Here are five facts you should know as you consider the value of a college education.\n
+          \t1. People with college degrees earn more on average.\n
+          \t2. College can help you expand your network.\n
+          \t3. Gaining new skills can help enhance your current career.\n
+          \t4. Your education can prepare you to transition to a new field.\n
+          \t5. A college degree is correlated to lower unemployment rates.\n"
+
+
+  utter_part_time:
+  - text: "The number of hours that an employee works to be considered part-time can vary. However, 
+          as a general rule, employees who work between 20 and 29 hours per week are considered part-time employees.\n
+          Here are 10 part-time home-based jobs for students that you can start today.\n
+          \t1. Content Writer\n
+          \t2. Graphic Designer\n
+          \t3. Data entry agent\n
+          \t4. Online tutor\n
+          \t5. Social media management\n
+          \t6. Translator\n
+          \t7. Web developer\n
+          \t8. Business development manager\n
+          \t9. Video editor\n
+          \t10. Game Tester"
+
+  utter_resume:
+  - text: "There are several ways to set your resume apart from the rest.\n
+          \t1. Understand what the hiring manager is looking for\n
+          \t2. Tailor it to your industry and the job you're applying for\n
+          \t3. Include a header and summary or objective\n
+          \t4. Add pertinent skills\n
+          \t5. Keep it concise\n
+          \t6. Make it visually appealing\n
+          \t7. Submit a cover letter\n
+          \t8. Proofread\n"
+
+  utter_interview:
+  - text: "You never get a second chance to make a first impression, so you’ll want to do your best in preparing for your interview in advance.\n
+          \t1.Pick your outfit\n
+          \t2. Practice greeting your interviewer\n
+          \t3. Study your resume and know everything about it\n
+          \t4. Practice your answers to the most common interview questions\n
+          \t5. Research the company and the job position you are applying for\n
+          \t6. Find out the type of interview you will be going on\n
+          \t7.Print out the directions to the interview and be on time\n"
+
+  utter_high_pay_jobs:
+  - text: "Highest paying jobs in 2021 are:\n
+        \t1. Data Scientist\n
+        \t2. Doctors and Surgeons\n
+        \t3. Artificial Intelligence\n
+        \t4. Cyber Security\n
+        \t5. Software Engineer\n
+        \t6. Commercial Pilot\n
+        \t7. Cloud Computing\n
+        \t8. Business Analyst\n
+        \t9. Digital Marketing\n
+        \t10. IoT (Internet of Things) Jobs"
+
+  utter_my_purpose:
+  - text: "I’m a career counseller’s bot …. Here are few points through which I can help in making careers:\n
+          \t1. Picking up the right career\n
+          \t2. Deciding time table and career strategy\n
+          \t3. Helping to gain Right skill\n
+          \t4. Helping to  gain confidence and insight\n
+          \t5. Helping to provide expert resources\n
+          \t6. Helping to bring stability in thought\n"
+
+  utter_career:
+  - text: "You have to ask these following questions \nto yourself:\n
+          \t1. What are my interests?\n
+          \t2. What are my skills?\n
+          \t3. What are my talents and strengths?\n
+          \t4. What is my personality?\n
+          \t5. What are my values?\n
+          \t6. What education or training do I need?\n
+          \t7. Are there jobs available in this career?\n
+          \t8. How much money do I want to make?\n
+          \t9. Where do I want to live?\n
+          \t10. Why do I want to pursue this career?"
+  utter_subject_choose:
+  - text: "Here are some steps to choosing a course you are truly interested in:\n
+        \t1. Identify which category you fall under\n
+        \t2. Ask yourself why you want to study\n
+        \t3. Decide on what career you want to pursue\n
+        \t4. Study destination\n
+        \t5. Mode of study\n
+        \t6. Identify the most important factor you are considering\n
+        \t7. Research\n
+        \t8. Narrow down options\n
+        \t9. Assess if you are eligible \n
+        \t10. Apply!"
+
+  utter_germany:
+  - text: "Germany Universities:\n
+        \t1. Technische Universität München\n
+        \t2. Ludwig-Maximilians-Universität München\n
+        \t3. Ruprecht-Karls-Universität Heidelberg\n
+        \t4. Humboldt-Universität zu Berlin\n
+        \t5. Freie Universität Berlin"
+
+  utter_canada:
+  - text: "Canada Universities:\n
+        \t1. University of Toronto\n
+        \t2. McGill University\n
+        \t3. University of British Columbia\n
+        \t4. Université de Montréal\n
+        \t5. University of Alberta"
+  
+  utter_india:
+  - text: "India Universities:\n
+        \t1. University of Delhi\n
+        \t2. Indian Institute of Technology Bombay\n
+        \t3. Indian Institute of Technology Kanpur\n
+        \t4. Indian Institute of Technology Madras\n
+        \t5. Indian Institute of Technology Delhi"
+
+  utter_uk:
+  - text: "UK Universities:\n
+        \t1. University of Oxford\n
+        \t2. University of Cambridge\n
+        \t3. Imperial College London\n
+        \t4. UCL (University College London)\n
+        \t5. University of Edinburgh"
+  utter_usa:
+  - text: "USA Universities:\n
+        \t1. Harvard University\n
+        \t2. Stanford University\n
+        \t3. Massachusetts Institute of Technology (MIT)\n
+        \t4. University of California Berkeley (UCB)\n
+        \t5. University of California, Los Angeles (UCLA)"
+
+  utter_col_canada:
+  - text: "Cost of living in Canada:\n
+        The monthly (average) cost of living in Canada for international students is usually between 
+        CAD $600 and $800 for food and other daily expenses, excluding accommodation."
+
+  utter_col_india:
+  - text: "Cost of living in India:\n
+        A student can experience a comfortable stay for a month within $160. So annually $1850 would 
+        make the student's living comfortable, happy, and safe."
+
+  utter_col_usa:
+  - text: "Cost of living in USA:\n
+        The estimated living cost for the US is around $10000 to $18000 per year, which averages around 
+        $1000 to $1500 per month. This includes your accommodation costs, room, and board, food, travel, 
+        textbooks, weather-appropriate clothing, and entertainment expenses as well"
+
+  utter_col_uk:
+  - text: "Cost of living in UK:\n
+        UK Visa and Immigration requires you to have a budget of £1,334 per month or up to a maximum of 
+        9 months or £12,006 to study in London. This amount is in addition to the tuition fees. This is 
+        the minimum amount you need to show to get a visa to study in London"
+
+  utter_col_germany:
+  - text: "Cost of living in Germany:\n
+        Cost of living Around 850 euros a month for living expenses. Compared to some other European 
+        countries, Germany is not very expensive. The costs of food, housing, clothing and cultural 
+        activities are slightly higher than the EU average. On average, students in Germany spend 
+        around 850 euros per month on living costs."
+
+  utter_top_colleges:
+  - text: "Select country"
+    buttons:
+    - title: "Canada"
+      payload: "/canada"
+    - title: "Germany"
+      payload: "/germany"
+    - title: "India"
+      payload: "/india"
+    - title: "USA"
+      payload: "/usa"  
+    - title: "UK"
+      payload: "/uk"  
+
+  utter_cost_of_living:
+  - text: "Select country"
+    buttons:
+    - title: "Canada"
+      payload: "/col_canada"
+    - title: "India"
+      payload: "/col_india"  
+    - title: "Germany"
+      payload: "/col_germany"
+    - title: "USA"
+      payload: "/col_usa"
+    - title: "UK"
+      payload: "/col_uk"
+
+  utter_ask_name:
+  - text: "Enter your name: "
+
+  utter_ask_contact:
+  - text: "Enter your contact number: "
+
+  utter_ask_email:
+  - text: "Enter your Email id: "
+
+  utter_ask_dept:
+  - text: "Enter which department you belong to: "
+    buttons:
+      - title: "Biology"
+        payload: '/inform{"dept":"Biology"}'
+      - title: "Chemistry and Biochemistry"
+        payload: '/inform{"dept":"Chemistry and Biochemistry"}'
+      - title: "Computer Science"
+        payload: '/inform{"dept":"Computer Science"}'
+      - title: "Earth and Space Sciences"
+        payload: '/inform{"dept":"Earth and Space Sciences"}'
+      - title: "English and Modern Languages"
+        payload: '/inform{"dept":"English and Modern Languages"}'
+      - title: "History"
+        payload: '/inform{"dept":"History"}'               
+      - title: "Mathematics"
+        payload: '/inform{"dept":"Mathematics"}'
+      - title: "Physics"
+        payload: '/inform{"dept":"Physics"}'
+      - title: "Political Science"
+        payload: '/inform{"dept":"Political Science"}'
+      - title: "Psychology"
+        payload: '/inform{"dept":"Psychology"}'
+      - title: "Sociology, Social Work and Criminal Justice"
+        payload: '/inform{"dept":"Sociology, Social Work and Criminal Justice"}'
+      - title: "University Studies"
+        payload: '/inform{"dept":"University Studies"}'
+      - title: "Communication"
+        payload: '/inform{"dept":"Communication"}'
+      - title: "Others"
+        payload: '/inform{"dept":"Others"}'        
+
+  utter_ask_institute:
+  - text: "Enter your institution name: "
+
+  utter_detail:
+  - text: "You've submitted the following answers:\n
+            - Name: {name}\n
+            - Contact Number: {contact}\n
+            - E-mail id: {email}\n
+            - Department: {dept}\n
+            - Institute: {institute}\n"
+
+forms:
+  detail_form:
+    name:
+      - type: from_text
+    contact:
+      - type: from_entity
+        entity: contact
+    email:
+      - type: from_entity
+        entity: email
+    dept:
+      - type: from_text
+    institute:
+      - type: from_text
+
+
+slots:
+  name:
+    type: rasa.shared.core.slots.TextSlot
+  contact:
+    type: unfeaturized
+  email:
+    type: unfeaturized
+  dept:
+    type: unfeaturized
+  institute:
+    type: rasa.shared.core.slots.TextSlot
+
+session_config:
+  session_expiration_time: 500
+  carry_over_slots_to_new_session: true
